@@ -1,6 +1,8 @@
 FROM node:8.9.1
-# Install unzip and Python build tools to be able to install the AWS CLI tools.
+# Install zip and unzip to be able to zip things.
 RUN apt-get update && \
     apt-get install -y zip unzip
 # Install Serverless and Grunt Node.js dependencies.
 RUN npm install -g @shopify/slate
+# Add ghr for creating Github Releases (https://github.com/tcnksm/ghr/)
+ADD ghr /usr/local/bin
