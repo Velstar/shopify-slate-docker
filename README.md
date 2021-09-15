@@ -4,6 +4,8 @@ A Docker container for building Shopify themes using Slate.
 
 # Useage
 
+Download / install Docker https://www.docker.com/products/docker-desktop
+
 Clone the repo
 
 `git clone git@github.com:Velstar/shopify-slate-docker.git`
