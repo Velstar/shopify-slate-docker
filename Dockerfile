@@ -6,3 +6,5 @@ RUN apt-get update && \
 RUN npm install -g @shopify/slate
 # Add ghr for creating Github Releases (https://github.com/tcnksm/ghr/)
 ADD ghr /usr/local/bin
+EXPOSE 3000
+EXPOSE 3001
